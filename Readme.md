@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Лапшин](https://up.htmlacademy.ru/htmlcss/36/user/1511811).
-* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 

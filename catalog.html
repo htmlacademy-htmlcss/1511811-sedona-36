@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -104,7 +105,7 @@
       <p class="hotels-found">Найдено гостиниц:
         <span class="search-result">38</span>
       </p>
-      <select name="select-control" aria-label="Сортировка">
+      <select class="sorting" name="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
@@ -166,8 +167,7 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="product.html">
-            <img class="hotel-card-image" src="images/catalog/hotel-greentree.jpg" alt="GreenTree Inn" width="300"
-              height="212">
+            <img class="hotel-card-image" src="images/hotel-greentree.jpg" alt="GreenTree Inn" width="300" height="212">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <span class="housing">Гостиница</span>
@@ -203,7 +203,7 @@
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-promise">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="visually-hidden">Email</label>
+        <label for="newsletter-email">Email</label>
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
           required>
         <button class="button newsletter-button" type="submit">Подписаться</button>

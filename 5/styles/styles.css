@@ -1,0 +1,432 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background: #f2f2f2;
+}
+
+.background {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*Header*/
+
+.page-header {
+  color: #000000;
+}
+
+.page-header-logo-link {
+  display: block;
+  margin-left: 70px;
+  margin-right: 28px;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 465px;
+}
+
+.navigation-user {
+  width: 320px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Main*/
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/*Hero-block*/
+
+.welcome {
+  background-image: url("../images/hero-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 485px;
+}
+
+.welcome-hero {
+  display: block;
+  margin: 0 auto;
+}
+
+/*Седона-небольшой городок*/
+
+.welcome-resume {
+  background-image: url("../images/white-background-sedona-small-town.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 282px;
+}
+
+.advantages-specification {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Рассмотрим причины*/
+
+.advantages-specification-reasons {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Список причин/преимуществ*/
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-description-items {
+  text-align: center;
+}
+
+.preview {
+  background-color: #82b3d3;
+  color: #ffffff;
+  margin: 0;
+}
+
+.advantages-item {
+  display: flex;
+  margin: 0;
+}
+
+.advantages-items {
+  width: 400px;
+  height: 385px;
+  text-align: center;
+}
+
+.advantages-wrapper {
+  padding: 102px 85px;
+}
+
+.advantages-no-preview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-bridge {
+  flex-direction: row-reverse;
+}
+
+.background-1 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.background-2 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/*Приезжайте в Седону*/
+
+.advantages-second {
+  min-height: 246px;
+  text-align: center;
+}
+
+.advantages-description {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-description-personal {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item-background {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-item-wrapper {
+  padding: 85px 81px;
+}
+
+.services-description {
+  color: #333333;
+  text-align: center;
+}
+
+/*Заинтересовались?*/
+
+.search-hotels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 96px 304px;
+  gap: 10px;
+  width: 1200px;
+  height: 406px;
+}
+
+.question {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date-offer {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.button-search-hotel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*Подписаться*/
+
+.newsletter {
+  background: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 415px;
+  background-color: #82b3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.newsletter-promise {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.field {
+  line-height: 24px;
+  align-items: center;
+}
+
+.newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/*Footer*/
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  margin: 0;
+  width: 142px;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  margin: 0;
+  width: 720px;
+  justify-content: center;
+}
+
+.madeby-logo {
+  display: flex;
+  margin: 0 auto;
+  width: 115px;
+}
+
+/*Catalog*/
+
+.catalog {
+  display: flex;
+}
+
+.background-wrapper {
+  background-image: url("../images/filters-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 412px;
+}
+
+.filters-hotels {
+  width: 1060px;
+  padding-left: 70px;
+}
+
+.catalog-down-column {
+  width: 1200px;
+}
+
+/*Инфраструктура*/
+/*
+.filters-hotels-group {
+  width: 150px;
+  margin-left: 70px;
+}
+*/
+/*Тип жилья*/
+
+.infrastructure {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.input-control {
+  line-height: 23px;
+}
+
+.min-price,
+.max-price {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.button-apply {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hotels-found {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.sorting {
+  color: #333333;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.housing {
+  color: #333333;
+}

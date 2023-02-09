@@ -150,7 +150,7 @@ body {
 
 .advantages-description-items {
   text-align: center;
-  }
+}
 
 .preview {
   background-color: #82b3d3;
@@ -174,8 +174,8 @@ body {
 }
 
 .advantages-no-preview {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .preview-bridge {
@@ -241,13 +241,13 @@ justify-content: space-between;
 /*Заинтересовались?*/
 
 .search-hotels {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 96px 304px;
-gap: 10px;
-width: 1200px;
-height: 406px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 96px 304px;
+  gap: 10px;
+  width: 1200px;
+  height: 406px;
 }
 
 .question {
@@ -294,14 +294,14 @@ height: 406px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .newsletter-promise {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .field {
@@ -351,18 +351,35 @@ height: 406px;
 }
 
 /*Catalog*/
-.inner-header {
-  background-image: url("../images/filters-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 412px;
-  display: flex;
-  margin: 0;
-}
 
 .catalog {
   display: flex;
 }
+
+.background-wrapper {
+  background-image: url("../images/filters-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 412px;
+}
+
+.filters-hotels {
+  width: 1060px;
+  padding-left: 70px;
+}
+
+.catalog-down-column {
+  width: 1200px;
+}
+
+/*Инфраструктура*/
+/*
+.filters-hotels-group {
+  width: 150px;
+  margin-left: 70px;
+}
+*/
+/*Тип жилья*/
 
 .infrastructure {
   font-weight: 700;

@@ -72,7 +72,6 @@ body {
 
 .navigation-list {
   width: 465px;
-  list-style-type: none;
 }
 
 .navigation-user {
@@ -203,10 +202,6 @@ body {
   color: #ffffff;
 }
 
-.advantages-item {
-  display: flex;
-}
-
 .advantages-items {
   text-align: center;
 }
@@ -247,10 +242,13 @@ body {
   color: #333333;
 }
 
+.advantages-list {
+  display: flex;
+}
+
 .services-list {
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
 }
 
 .services-item-background {
@@ -432,6 +430,10 @@ body {
 
 .sorting {
   color: #333333;
+}
+
+.catalog-hotels {
+  display: flex;
 }
 
 .hotel-card-title {

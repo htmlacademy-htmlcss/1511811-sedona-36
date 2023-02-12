@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="background">
+  <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
         <a class="page-header-logo-link">
@@ -54,18 +54,19 @@
           <p class="advantages-specification-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
         <section class="advantages">
-          <ul class="advantages-list">
-            <li class="advantages-item preview preview-architecture">
-              <div class="advantages-items">
-                <div class="advantages-wrapper">
-                  <h3 class="advantages-title">Настоящий городок</h3>
-                  <p class="advantages-description-items">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="clear-list">
+            <ul class="advantages-list">
+              <li class="advantages-item preview preview-architecture">
+                <div class="advantages-items">
+                  <div class="advantages-wrapper">
+                    <h3 class="advantages-title">Настоящий городок</h3>
+                    <p class="advantages-description-items">Седона — не аттракцион для туристов, там течёт своя жизнь
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <img class="architecture" src="images/sedona.jpg" alt="Архитектура города Седона" width="800"
-                height="385">
-            </li>
-            <div class="advantages-no-preview">
+                <img class="architecture" src="images/sedona.jpg" alt="Архитектура города Седона" width="800"
+                  height="385">
+              </li>
               <li class="advantages-item background-2">
                 <div class="advantages-items">
                   <div class="advantages-wrapper">
@@ -90,17 +91,17 @@
                   </div>
                 </div>
               </li>
-            </div>
-            <li class="advantages-item preview preview-bridge">
-              <div class="advantages-items">
-                <div class="advantages-wrapper">
-                  <h3 class="advantages-title">Там есть мост дьявола</h3>
-                  <p class="advantages-description-items">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <li class="advantages-item preview preview-bridge">
+                <div class="advantages-items">
+                  <div class="advantages-wrapper">
+                    <h3 class="advantages-title">Там есть мост дьявола</h3>
+                    <p class="advantages-description-items">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                  </div>
                 </div>
-              </div>
-              <img class="bridge" src="images/bridge.jpg" alt="Пейзаж каньона" width="800" height="385">
-            </li>
-          </ul>
+                <img class="bridge" src="images/bridge.jpg" alt="Пейзаж каньона" width="800" height="385">
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="advantages-second">
           <h2 class="advantages-description">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
@@ -137,14 +138,16 @@
           <button class="button-search-hotel" type="button">поиск гостиницы в седоне</button>
         </section>
         <section class="newsletter">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-promise">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </form>
+          <div class="newsletter-wrapper">
+            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+            <p class="newsletter-promise">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
+              <button class="button newsletter-button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
       </div>
     </main>
@@ -153,20 +156,20 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Ссылки на социальные сети</h2>
           <ul class="footer-social-list">
-            <li class="footer-social-item">
+            <li class="footer-social-item vkontakte">
               <a class="visually-hidden" href="https://vk.com/htmlacademy">Vkontakte</a>
             </li>
-            <li class="footer-social-item">
+            <li class="footer-social-item telegram">
               <a class="visually-hidden" href="https://t.me/htmlacademy">Telegram</a>
             </li>
-            <li class="footer-social-item">
+            <li class="footer-social-item youtube">
               <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
             </li>
           </ul>
         </section>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <p class="visually-hidden">Сделано в
-          <a class="visually-hidden htmlacademy-link" href="https://echo.htmlacademy.ru/">
+        <p class="visually-hidden madeby">Сделано в
+          <a class="htmlacademy-link" href="https://echo.htmlacademy.ru/">
             <img class="madeby-logo" src="images/logo-html-academy.svg" alt="производитель сайта" width="115"
               height="33">
           </a>

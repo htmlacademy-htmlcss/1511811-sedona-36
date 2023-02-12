@@ -20,6 +20,8 @@ html {
 
 body {
   display: flex;
+  margin: 0;
+  padding: 0;
   flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -29,7 +31,7 @@ body {
   color: #000000;
   background: #f2f2f2;
 }
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -42,7 +44,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
+
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -69,9 +71,8 @@ body {
 }
 
 .navigation-list {
-  margin: 0;
-  padding: 0;
   width: 465px;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -88,18 +89,68 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  width: 140px;
+  height: 36px;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
+}
+
+.button-wish {
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  height: 36px;
+}
+
+.big-button {
+  width: 191px;
+  height: 36px;
+}
+
+.button-reset {
+  background: transparent;
+}
+
+.button-blue {
+  background: #82B3D3;
+}
+
+.button-green {
+  background: #7DB54F;
+}
+
+.button-brown {
+  background: #756157;
+}
+
+.button-gray {
+  background: #F2F2F2;
+  color: #333333;
+  font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
+  padding-top: 9px;
+  height: 28px;
 }
 
 /*Main*/
 
 .main-container {
   flex-grow: 1;
+}
+
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 /*Hero-block*/
@@ -118,13 +169,6 @@ body {
 
 /*Седона-небольшой городок*/
 
-.welcome-resume {
-  background-image: url("../images/white-background-sedona-small-town.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 69px 0px;
-}
-
 .advantages-specification {
   font-weight: 700;
   font-size: 30px;
@@ -140,22 +184,9 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*Список причин/преимуществ*/
-
-.advantages-list {
-  margin: 0;
-  padding: 0;
-}
-
-.clear-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
 .advantages-title {
   font-weight: 700;
@@ -170,12 +201,10 @@ body {
 .preview {
   background-color: #82b3d3;
   color: #ffffff;
-  margin: 0;
 }
 
 .advantages-item {
   display: flex;
-  margin: 0;
 }
 
 .advantages-items {
@@ -184,11 +213,6 @@ body {
 
 .advantages-wrapper {
   padding: 102px 85px;
-}
-
-.advantages-no-preview {
-  display: flex;
-  justify-content: space-between;
 }
 
 .preview-bridge {
@@ -226,8 +250,7 @@ body {
 .services-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;
 }
 
 .services-item-background {
@@ -273,16 +296,10 @@ body {
 }
 
 .button-search-hotel {
-  display: block;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #756157;
   width: 376px;
-  margin: 0 auto;
-  border-radius: 4px;
+  height: 52px;
 }
 
 /*Подписаться*/
@@ -324,20 +341,13 @@ body {
   display: flex;
 }
 
-.newsletter-button {
-  font-weight: 700;
+.button-newsletter {
   font-size: 20px;
   line-height: 36px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
   background: #82B3D3;
   width: 228px;
   height: 52px;
   border-radius: 0px 4px 4px 0px;
-  border: 0;
-  padding: 0;
 }
 
 .newsletter-wrapper {
@@ -369,7 +379,6 @@ body {
 }
 
 .madeby {
-
   padding: 48px 70px 38px 0px;
 }
 
@@ -387,8 +396,7 @@ body {
 }
 
 .filters-hotels {
-  width: 1060px;
-  padding-left: 70px;
+  padding: 30px 70px 70px;
 }
 
 /*Тип жилья*/
@@ -409,16 +417,10 @@ body {
   line-height: 24px;
 }
 
-.button-apply {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.button-reset {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+.detailed {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .hotels-found {
@@ -441,4 +443,17 @@ body {
 
 .housing {
   color: #333333;
+}
+/*Подписаться в Catalog*/
+
+.newsletter-no-background_title {
+  color: inherit;
+}
+
+.newsletter-no-background_promise {
+  color: inherit;
+}
+
+.newsletter-no-background_field {
+  background: #F2F2F2;
 }

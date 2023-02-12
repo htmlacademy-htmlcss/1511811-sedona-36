@@ -120,11 +120,11 @@ body {
 }
 
 .button-blue {
-  background: #82B3D3;
+  background: #82b3d3;
 }
 
 .button-green {
-  background: #7DB54F;
+  background: #7db54f;
 }
 
 .button-brown {
@@ -132,7 +132,7 @@ body {
 }
 
 .button-gray {
-  background: #F2F2F2;
+  background: #f2f2f2;
   color: #333333;
   font-weight: 400;
   text-align: center;
@@ -342,7 +342,7 @@ body {
 .button-newsletter {
   font-size: 20px;
   line-height: 36px;
-  background: #82B3D3;
+  background: #82b3d3;
   width: 228px;
   height: 52px;
   border-radius: 0px 4px 4px 0px;
@@ -457,5 +457,5 @@ body {
 }
 
 .newsletter-no-background_field {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }

@@ -225,8 +225,12 @@ ul.navigation-user {
 /*Список причин/преимуществ*/
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advantages-item {
+  display: grid;
 }
 
 .advantages-title {
@@ -240,23 +244,30 @@ ul.navigation-user {
 }
 
 .preview {
-  display: flex;
+  grid-column: 1 / 4;
   background-color: #82b3d3;
   color: #ffffff;
 }
 
-.advantages-items {
-  text-align: center;
+.architecture {
+  grid-column: 2 / 4;
 }
 
 .advantages-wrapper {
+  display: grid;
   width: 230px;
   min-height: 200px;
   padding: 90px 85px;
+  text-align: center;
 }
 
 .preview-bridge {
-  flex-direction: row-reverse;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bridge {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
 .background-1 {
@@ -287,13 +298,9 @@ ul.navigation-user {
   color: #333333;
 }
 
-.advantages-list {
-  display: flex;
-}
-
 .services-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .services-item-background {
@@ -406,9 +413,8 @@ ul.navigation-user {
 }
 
 .footer-social-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .footer-social-item {
@@ -489,23 +495,36 @@ ul.navigation-user {
 }
 
 .filters-hotels {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.filters-hotels-group {
-  display: block;
-  margin-right: 70px;
+.infrastructure {
+  margin-bottom: 32px;
 }
 
-.filters-hotels-group-second {
-  display: block;
+.infrastructure-list {
+  display: grid;
+  grid-template-columns: 150px;
+  row-gap: 16px;
+}
+
+.filters-hotels-group-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  column-gap: 70px;
   margin-right: 140px;
 }
 
-.filters-hotels-group-third {
-  display: block;
-  width: 288px;
+.price-wrapper {
+  display: grid;
+  grid-template-columns: 143px 143px;
+  gap: 2px;
+}
+
+.control-range {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
 }
 
 .filters-hotels-group-buttons {
@@ -579,10 +598,9 @@ ul.navigation-user {
 }
 
 .button-filters-hotels-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 8px;
 }
 
 .card {
@@ -613,7 +631,6 @@ ul.navigation-user {
   flex-direction: column;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  margin-bottom: 20px;
 }
 
 .hotel-card-title {
@@ -628,14 +645,22 @@ ul.navigation-user {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 70px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  margin-left: 70px;
+}
+
+.hotel-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 20px 16px;
 }
 
 .pagination {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  columns-gap: 8px;
   padding: 40px 70px 60px;
 }
 

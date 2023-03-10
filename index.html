@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -30,11 +31,21 @@
           <li class="navigation-user-item">
             <button class="nav-user-button button-nav-user-search" type="button">
               <span class="visually-hidden">Поиск</span>
+              <svg class="nav-user-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="#000" viewBox="0 0 20 20">
+                <path
+                  d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+              </svg>
             </button>
           </li>
           <li class="navigation-user-item">
             <button class="nav-user-button button-nav-user-favorites" type="button">
               <span class="visually-hidden">Избранное</span>
+              <svg class="nav-user-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="#000">
+                <path
+                  d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+              </svg>
             </button>
           </li>
           <li class="navigation-item navigation-item-button-wish">
@@ -188,6 +199,79 @@
         </p>
       </div>
     </footer>
+  </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search-hotels">
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="search-hotels-form" action="#" method="post">
+          <div class="field-group">
+            <label class="modal-label" for="date-first">Дата Заезда:</label>
+            <input class="search-hotels-form-field" type="text" id="date-first" name="search-hotels-date-first"
+              placeholder="Укажите дату">
+          </div>
+          <p class="explanation-field-group explanation-field-group_date-first">Мы не можем отправить вас в прошлое.</p>
+          <div class="field-group">
+            <label class="modal-label" for="date-last">Дата Выезда:</label>
+            <input class="search-hotels-form-field" type="text" id="date-last" name="search-hotels-date-last"
+              placeholder="Укажите дату">
+          </div>
+          <p class="explanation-field-group">На эти даты есть свободные номера. Пока есть.</p>
+          <div class="field-group-adults-kids">
+            <div class="modal-adults-kids">
+              <label class="modal-label" for="adults-number">Взрослые:</label>
+              <div class="modal-label-wrapper">
+                <button class="button-modal button-modal-minus" type="button">
+                  <svg class="button-modal-minus_svg" aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="rgba(117, 97, 87, 0.3)"
+                    viewBox="0 0 15 2">
+                    <path d="M.4 0v2h14V0H.4Z" /></svg>
+                </button>
+                <input class="search-hotels-form-number" type="number" id="adults-number" placeholder="2">
+                <button class="button-modal button-modal-plus" type="button">
+                  <svg class="button-modal-plus_svg" aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgba(117, 97, 87, 0.3)"
+                    viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" /></svg>
+                </button>
+              </div>
+            </div>
+            <div class="modal-adults-kids">
+              <label class="modal-label modal-label-kids" for="kids-number">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" id="modal-label-adults-kids"
+                  aria-labelledby="tooltip-label-date">
+                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="3" height="12" fill="#fff" viewBox="0 0 3 12">
+                    <path fill-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z" clip-rule="evenodd" /></svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <div class="modal-label-wrapper">
+                <button class="button-modal button-modal-minus" type="button">
+                  <svg class="button-modal-minus_svg" aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="rgba(117, 97, 87, 0.3)"
+                    viewBox="0 0 14 2">
+                    <path d="M.4 0v2h14V0H.4Z" /></svg>
+                </button>
+                <input class="search-hotels-form-number" type="number" id="kids-number" placeholder="2">
+                <button class="button-modal button-modal-plus" type="button">
+                  <svg class="button-modal-plus_svg" aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgba(117, 97, 87, 0.3)"
+                    viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="button button-blue button-search-hotel-modal" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -26,18 +27,28 @@
             <span class="navigation-link navigation-link-current">Гостиницы</span>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user  clear-list">
+        <ul class="navigation-list navigation-user clear-list">
           <li class="navigation-user-item">
             <button class="nav-user-button button-nav-user-search" type="button">
               <span class="visually-hidden">Поиск</span>
+              <svg class="nav-user-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="#000" viewBox="0 0 20 20">
+                <path
+                  d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+              </svg>
             </button>
           </li>
           <li class="navigation-user-item">
             <button class="nav-user-button button-nav-user-favorites" type="button">
               <span class="visually-hidden">Избранное</span>
+              <svg class="nav-user-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="#000">
+                <path
+                  d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+              </svg>
             </button>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-button-wish">
             <button class="button button-brown button-wish" type="button">Хочу сюда!</button>
           </li>
         </ul>
@@ -68,17 +79,23 @@
                   <ul class="infrastructure-list clear-list">
                     <li class="infrastructure-item">
                       <label class="control">
-                        <input class="input-control" type="checkbox" name="pool" checked>Бассейн
+                        <input class="visually-hidden input-control" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="infrastructure-item">
                       <label class="control">
-                        <input class="input-control" type="checkbox" name="parking" checked>Парковка
+                        <input class="visually-hidden input-control" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="infrastructure-item">
                       <label class="control">
-                        <input class="input-control" type="checkbox" name="wi-fi">Wi-Fi
+                        <input class="visually-hidden input-control" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-fi</span>
                       </label>
                     </li>
                   </ul>
@@ -88,17 +105,25 @@
                   <ul class="infrastructure-list clear-list">
                     <li class="infrastructure-item">
                       <label class="control">
-                        <input class="input-control" type="radio" name="type-housing" value="hotel" checked>Гостиница
+                        <input class="visually-hidden input-control" type="radio" name="type-housing" value="hotel"
+                          checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="infrastructure-item">
                       <label class="control">
-                        <input class="input-control" type="radio" name="type-housing" value="motel">Мотель
+                        <input class="visually-hidden input-control" type="radio" name="type-housing" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="infrastructure-item">
                       <label class="control">
-                        <input class="input-control" type="radio" name="type-housing" value="apartments">Апартаменты
+                        <input class="visually-hidden input-control" type="radio" name="type-housing"
+                          value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -106,10 +131,27 @@
               </div>
               <fieldset class="filters-hotels-group-third clear-section">
                 <legend class="infrastructure">Стоимость, ₽: </legend>
-                <div class="price-wrapper">
-                  <input class="min-price" type="number" name="min-price-hotels" value="0">
-                  <input class="max-price" type="number" name="min-price-hotels" value="9000">
-                  <input class="control-range" type="range" name="price-range">
+                <div class="range-container">
+                  <div class="range">
+                    <label class="range-min-price">
+                      <input class="min-price" type="number" name="min-price-hotels" value="0">
+                      <span>от</span>
+                    </label>
+                    <label class="range-max-price">
+                      <input class="max-price" type="number" name="max-price-hotels" value="9000">
+                      <span>до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </fieldset>
               <div class="filters-hotels-group-buttons clear-section">
@@ -152,9 +194,13 @@
               <span class="hotel-card-price">От 4000 ₽</span>
               <a class="button button-brown detailed" href="#">Подробнее</a>
               <button class="button button-blue" type="button">В Избранное</button>
-              <span class="stars star-4">
-                <span class="visually-hidden">Четыре звезды</span>
-              </span>
+              <div class="stars-wrapper">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <span class="visually-hidden">Четыре звезды</span>
               <span class="button button-gray">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -169,9 +215,13 @@
               <span class="hotel-card-price">От 5000 ₽</span>
               <a class="button button-brown detailed" href="#">Подробнее</a>
               <button class="button button-green" type="button">В Избранном</button>
-              <span class="stars star-4">
-                <span class="visually-hidden">Четыре звезды</span>
-              </span>
+              <div class="stars-wrapper">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <span class="visually-hidden">Четыре звезды</span>
               <span class="button button-gray">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -186,9 +236,12 @@
               <span class="hotel-card-price">От 2500 ₽</span>
               <a class="button button-brown detailed" href="#">Подробнее</a>
               <button class="button button-blue" type="button">В Избранное</button>
-              <span class="stars star-3">
-                <span class="visually-hidden">Три звезды</span>
-              </span>
+              <div class="stars-wrapper">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <span class="visually-hidden">Три звезды</span>
               <span class="button button-gray">Рейтинг: 6,9</span>
             </div>
           </li>
@@ -203,9 +256,11 @@
               <span class="hotel-card-price">От 1500 ₽</span>
               <a class="button button-brown detailed" href="#">Подробнее</a>
               <button class="button button-blue" type="button">В Избранное</button>
-              <span class="stars star-2">
-                <span class="visually-hidden">Две звезды</span>
-              </span>
+              <div class="stars-wrapper">
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <span class="visually-hidden">Две звезды</span>
               <span class="button button-gray">Рейтинг: 5,0</span>
             </div>
           </li>

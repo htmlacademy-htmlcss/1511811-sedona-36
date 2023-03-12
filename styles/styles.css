@@ -955,9 +955,14 @@ body {
   border-radius: 0px 4px 4px 0px;
 }
 
-.min-price:focus,
-.max-price:focus {
+.min-price:focus-visible,
+.max-price:focus-visible {
   outline: 3px solid #83b3d3;
+}
+
+.min-price:focus-visible:not(:placeholder-shown),
+.max-price:focus-visible:not(:placeholder-shown) {
+  outline: 2px solid #000000;
 }
 
 .filters-hotels-group-buttons {
@@ -1313,7 +1318,6 @@ body {
 
 .search-hotels-form-field:focus-visible:not(:placeholder-shown) {
   outline: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .modal-label {
@@ -1378,12 +1382,10 @@ body {
   color: #000000;
 }
 
-.search-hotels-form-number[type="number"]:not(
-    :disabled
-  )::-webkit-input-placeholder,
-.search-hotels-form-field[type="text"]:not(
-    :disabled
-  )::-webkit-input-placeholder {
+.min-price[type="number"]:not(:disabled)::-webkit-input-placeholder,
+.max-price[type="number"]:not(:disabled)::-webkit-input-placeholder,
+.search-hotels-form-number[type="number"]:not(:disabled)::-webkit-input-placeholder,
+.search-hotels-form-field[type="text"]:not(:disabled)::-webkit-input-placeholder {
   color: #000000;
 }
 
@@ -1496,8 +1498,7 @@ body {
 .button-modal-plus_svg {
   vertical-align: middle;
 }
-/*
+
 .modal-container-close {
   display: none;
 }
-*/

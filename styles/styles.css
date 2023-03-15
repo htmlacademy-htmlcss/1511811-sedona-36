@@ -630,6 +630,7 @@ img {
   padding-left: 20px;
   border-radius: 4px 0 0 4px;
   border: none;
+  background: #FFFFFF;
 }
 
 .newsletter-form {
@@ -945,7 +946,7 @@ img {
   width: 20px;
   height: 20px;
   border-radius: 5px;
-  color: #ffffff;
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -980,6 +981,7 @@ img {
   font-size: 18px;
   padding: 12px 0 12px 20px;
   width: 123px;
+  background: #ffffff;
 }
 
 .min-price {
@@ -1417,8 +1419,8 @@ img {
   text-align: center;
   border: none;
   color: #000000;
-  user-select: none;
-  pointer-events: none;
+  position: relative;
+  z-index: 1;
 }
 
 .min-price[type="number"]:not(:disabled)::-webkit-input-placeholder,
@@ -1455,9 +1457,11 @@ img {
 }
 
 .tooltip-toggle {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
   border: none;
-  display: block;
-  padding: 5px;
+  color: #ffffff;
   background: #83b3d3;
   border-radius: 50%;
   width: 26px;
@@ -1529,7 +1533,7 @@ img {
 .button-modal:focus-visible {
   outline: 3px solid #82b3d3;
   border-radius: 4px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .button-modal:hover svg,

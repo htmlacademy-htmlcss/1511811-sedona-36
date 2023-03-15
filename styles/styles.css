@@ -266,7 +266,7 @@ img {
   width: 160px;
   padding-top: 8px;
   padding-bottom: 8px;
-
+  text-decoration: none;
   font-size: 16px;
   line-height: 20px;
 }
@@ -584,6 +584,7 @@ img {
   padding-top: 8px;
   padding-bottom: 8px;
   margin: 52px auto 0 auto;
+  text-decoration: none;
 }
 
 /*Подписаться*/
@@ -698,8 +699,8 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  width: 720px;
-  padding: 5px 195px;
+  width: 500px;
+  padding: 5px 50px;
   text-decoration: none;
 }
 
@@ -1140,30 +1141,22 @@ img {
   margin-left: auto;
 }
 
-.stars-wrapper {
-  position: relative;
-  display: flex;
-  width: 140px;
-  height: 37px;
-}
-
 .stars {
-  background-repeat: no-repeat;
-  background-position: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  width: 140px;
 }
 
-.stars-4 {
-  background-image: url("../images/stars-4.svg");
-}
-
-.stars-3 {
-  background-image: url("../images/stars-3.svg");
-}
-
-.stars-2 {
-  background-image: url("../images/stars-2.svg");
+.star {
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 17px;
+  background-position: left;
+  color: #83B3D3;
+  margin-right: 6px;
 }
 
 .hotel-card-title {
@@ -1321,6 +1314,7 @@ img {
 }
 
 .modal-title {
+  width: 540px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1365,6 +1359,7 @@ img {
 }
 
 .modal-label {
+  width: 130px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1381,19 +1376,21 @@ img {
   border-radius: 4px;
 }
 
-.modal-label-kids {
-  margin: 0;
-}
-
-.modal-label-adults {
-  margin-right: 46px;
-}
-
-.modal-form-kids {
+.modal-adults-kids {
   display: flex;
 }
 
-.modal-adults-kids {
+.modal-label-adults {
+  width: 100px;
+  margin-right: 36px;
+}
+
+.modal-label-kids {
+  width: 50px;
+  margin: 0;
+}
+
+.modal-form-kids {
   display: flex;
 }
 
@@ -1466,11 +1463,9 @@ img {
   border-radius: 50%;
   width: 26px;
   height: 26px;
-}
-
-.tooltip-icon {
-  vertical-align: middle;
-  transform: translateY(-1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tooltip-text {
@@ -1480,32 +1475,35 @@ img {
   line-height: 20px;
   text-transform: none;
   padding: 18px 20px 25px 22px;
-  display: block;
   width: 216px;
   background: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   position: absolute;
-  top: 77%;
-  left: 48%;
+  transform: translate(-116px, 40px);
   z-index: 1;
   display: none;
 }
 
-.tooltip-text::before {
+.tooltip-text::after {
   content: "";
+  background-image: url("../images/arrow-tooltip.svg");
+  width: 19px;
+  height: 9px;
   position: absolute;
-  top: -22%;
-  right: 42%;
-  border: 19px solid transparent;
-  border-bottom: 19px solid #333333;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tooltip {
-  position: block;
+  position: relative;
   margin-left: 10px;
   margin-top: 11px;
   margin-right: 46px;
+  display: flex;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
